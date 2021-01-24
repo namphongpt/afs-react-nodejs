@@ -1,0 +1,104 @@
+
+
+body .login {
+    background-color: #333333;
+    color: #fff;
+}
+
+.card.login input.form-control {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card.login span.logo {
+    width: 383px;
+    height: 85px;
+    position: relative;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-top: 19px;
+}
+
+.card.login img.logo-image {
+    width: 80%;
+}
+
+
+.card.register {
+    width: 55%;
+    margin: 0px auto;
+    height: auto;
+    top: 20px;
+    bottom: auto;
+}
+
+.card.login {
+    width: 100%;
+    margin: 0px auto;
+    min-height: 700px;
+    height: 100vh;
+    top: 0px;
+    bottom: auto;
+    border-radius: 0;
+}
+
+.card.login .card-footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background: transparent;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+.ggicons {
+    width: 42px !important;
+    padding-right: 20px;
+}
+
+
+.login p {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.login h2 {
+    color: #349ff4;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: left;
+    border-bottom: 2px solid #f3f1f1;
+    margin: 15px;
+    padding-top: 5px;
+    padding-bottom: 47px;
+}
+
+.small-size {
+    font-size: 20px;
+    color: #906c06;
+}
+
+.div-frame-login.col form {
+    max-width: 450px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1000px){
+    .div-frame-adviced {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 568px){
+
+    .card.login {
+        width: 80%;
+    }
+}

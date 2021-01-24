@@ -1,0 +1,289 @@
+.navbar {
+    background-color: #333333;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1vw;
+}
+
+a.navbar-brand::after {
+    content: '';
+    background: red;
+    width: 228px;
+    height: 87px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+a.navbar-brand::before {
+    top: 0;
+    left: 228px;
+    position: absolute;
+    content: "";
+    border-width: 87px 0px 0px 31px;
+    border-color: transparent red;
+    border-style: solid;
+}
+
+a.navbar-brand {
+    width: 240px;
+}
+
+.navbar-brand span.logo {
+    position: relative;
+    z-index: 1;
+    top: -7px;
+    left: 18px;
+}
+
+.navbar-brand span.logo .logo-image {
+    width: 70%;
+}
+
+.btn-signup {
+    margin-right: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    color: #fff;
+    width: 150px;
+}
+
+.btn-signin {
+    border-radius: 20px;
+}
+
+.container-fluid.pages {
+    height: auto;
+    min-height: 100%;
+}
+
+.pages .container-fluid {
+    height: auto;
+}
+
+button.react-scrolltop-button.scroll-your-role.sc-bdVaJa.fMbuBM::before {
+    content: '\f106';
+    font: normal normal normal 47px/0.2 FontAwesome;
+    display: block;
+    line-height: 1;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 100px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: right;
+}
+
+/*.banner-specials {
+  max-height: 600px;
+}*/
+
+.container {
+    background: transparent;
+}
+
+.cart-item {
+    padding: 20px;
+}
+
+html .fMbuBM {
+    position: fixed;
+    right: 1%;
+    bottom: -1%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #0000;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.pages .nav-item ::before {
+    content: '';
+    border-top: 2px solid #333;
+    position: relative;
+    height: 2px;
+    display: block;
+}
+
+.pages .nav-item:hover ::before {
+    border-color: #f00;
+}
+
+.pages .nav-item.active ::before {
+    border-color: #f00;
+}
+
+.pages .nav-item.active .nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #fff;
+}
+
+.pages .page-heading {
+    max-width: 1159px;
+    margin: auto;
+    padding-bottom: 55px;
+    text-align: center;
+}
+
+.pages .shop-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    width: auto;
+    grid-gap: 20px;
+    margin: auto;
+}
+
+.pages .cart-item {
+    width: 100%;
+}
+
+.pages .card.cart-item h3 {
+    font-size: 15px;
+    flex-flow: wrap;
+    text-align: center;
+    background: #fee05d;
+    padding: 10px;
+    height: 60px;
+}
+
+
+
+.pages .glider-slide {
+    padding: 15px;
+}
+
+.pages .glider {
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+}
+
+.pages .glider-next,
+.pages .glider-prev {
+    top: 40%;
+}
+
+.pages .container {
+    max-width: 1350px;
+    margin: auto;
+    min-height: 100%;
+    /*background-color: rgb(238, 238, 238);*/
+}
+
+.pages .btn.btn-primary.sign-in {
+    margin: auto;
+    display: block;
+    height: 52px;
+    background: red;
+    border: 3px solid #f39c12;
+    padding-left: 25px;
+    padding-right: 25px;
+    top: 138px;
+    position: relative;
+    width: 222px;
+    line-height: 2;
+}
+
+.pages .btn.btn-primary.show-all {
+    margin: auto;
+    display: block;
+    height: 52px;
+    background: red;
+    border: 3px solid #f39c12;
+    padding-left: 25px;
+    padding-right: 25px;
+    top: 30px;
+    position: relative;
+    width: 222px;
+    line-height: 2;
+}
+
+.pages .jumbotron.banner-specials.main {
+    background: #fff;
+}
+
+.pages .suscribe-area .form {
+    max-width: 550px;
+    margin: auto;
+    padding-bottom: 5%;
+    padding-top: 4%;
+}
+
+.pages .suscribe-area .form h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.pages .suscribe-area .form input {
+    height: 52px;
+    width: 85.63%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pages .page-footer.blue.font-small.pt-4.mt-4 {
+    background: #333;
+    padding: 68px !important;
+    padding-bottom: 68px;
+    padding-bottom: 10px !important;
+    color: #fff;
+}
+
+.pages .page-footer.blue.font-small.pt-4.mt-4 .logo .logo-image {
+    max-width: 200px;
+}
+
+.pages ul {
+    padding-left: 0;
+}
+
+.pages .page-footer a {
+    color: #FFF;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.pages .footer-copyright {
+    padding-top: 80px !important;
+}
+
+.pages .react-scrolltop-button.scroll-your-role.react-scrolltop-button-mobile.sc-bwzfXH.cavzrM::before {
+    content: '\f106';
+    font: normal normal normal 47px/0.2 FontAwesome;
+    line-height: 0.2;
+    display: block;
+    line-height: 1;
+}
+
+.pages .react-scrolltop-button.scroll-your-role.react-scrolltop-button-mobile.sc-bwzfXH.cavzrM {
+    position: fixed;
+    right: 1%;
+    bottom: -1%;
+    padding: 3px;
+    border-radius: 10px;
+    border: 2px solid #0000;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    width: 55px;
+    height: 71px;
+    margin-bottom: -20px;
+}
