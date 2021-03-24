@@ -617,5 +617,8 @@
 [0531/192936.952:ERROR:crash_report_database_win.cc(428)] unexpected header
 [0531/194436.957:ERROR:crash_report_database_win.cc(428)] unexpected header
 [0531/195936.962:ERROR:crash_report_database_win.cc(428)] unexpected header
+<<<<<<< HEAD
 [0625/222253.654:ERROR:crash_report_database_win.cc(428)] unexpected header
 [0811/214630.461:ERROR:crash_report_database_win.cc(428)] unexpected header
+=======
+>>>>>>> 7f4a009a6b6e9010069f793fc5ff8224a8b99db1

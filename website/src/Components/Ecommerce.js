@@ -34,8 +34,12 @@ class ProductList extends React.Component {
     })
       .then(response => response.json())
       .then(json => {
-        //console.log(json[0].token);
-        this.setState({ jsonResponse: json[0].token });
+        console.log(json[0]);
+        this.setState({ jsonResponse: false });
+        if(json.token){
+          this.setState({ jsonResponse: json.token });
+        }
+        
       });
   }
 

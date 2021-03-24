@@ -512,7 +512,6 @@ html .timeline-editor__frames-layer__item {
   user-select: none;
 }
 
-
 @media screen and (max-width: 768px) {
   .media {
     display: grid;

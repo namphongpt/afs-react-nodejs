@@ -10,6 +10,7 @@ const indexRouter = require('./server/routes/index');
 require('dotenv').config();
 app.use(express.static(__dirname + '/server/assets/')); //use for cases of the html page errors
 app.use(express.static(__dirname + '/public/assets/')); //use for all media
+app.use(express.static(__dirname + '/server/resources/')); //use for all videos
 //app.use(express.static('server'));
 //app.use(express.Router());
 app.use(body_parser.json());

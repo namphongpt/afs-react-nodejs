@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const dbConn = require('../config/mysqldb.js');
 const navi = require('../config/nav.js');
-
 //app navigation
 const nav_title = 'Cool Template';
 
@@ -181,6 +180,68 @@ router.post("/upload/:id", (req, res, next) => {
                 upload: false
             });
     });
+});
+
+
+router.get('/videos/:action/:type', (req, res) => {
+   const editorApi = require('../scripts/buildVideo');
+   const dir_ = __dirname;
+   const userID = 23;
+   const action = req.params.action;
+   const type = req.params.type;
+
+   const params = {
+       width: 800,
+       height: 720,
+       outPath: path.join(dir_, `../resources/videos/${userID}/${action}-${userID}-out.mp4`),
+       fast: type,
+       defaults: {
+           transition: {
+               duration: 0
+           },
+           layer: {
+               fontPath: path.join(dir_, '../resources/fonts/Roboto/Roboto-Thin.ttf')
+           }
+       },
+       clips: [{
+               duration: 1,
+               layers: [{
+                   type: 'title-background',
+                   text: 'Created with Power by AdforSocials',
+                   background: {
+                       type: 'color',
+                       color: 'black'
+                   }
+               }]
+           },
+           {
+               layers: [{
+                   type: 'video',
+                   path: path.join(dir_, '../resources/videos/yt1s_mundo_360p.mp4'),
+                   cutFrom: 6,
+                   cutTo: 20,
+                   resizeMode: 'contain'
+               }, {
+                   type: 'title',
+                   text: 'Create by AdforSocials'
+               }]
+           },
+           {
+            duration: 5,
+            layers: [{
+                type: 'title-background',
+                text: 'Thank you! Miguel Medina',
+                background: {
+                    type: 'radial-gradient'
+                }
+            }]
+        }
+       ]
+   }
+
+   editorApi(params);
+
+   res.json(params);
 });
 
 

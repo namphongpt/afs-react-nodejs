@@ -135,7 +135,7 @@ class App extends React.Component {
     return (
       <Router>
         <Switch>
-          <PublicRoute restricted={false} component={Home} path="/" exact />
+          <PublicRoute restricted={false} component={Login} path="/" exact />
           <PublicRoute
             restricted={true}
             component={Login}
